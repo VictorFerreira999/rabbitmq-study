@@ -1,11 +1,9 @@
 package com.microservico.estoquepreco.controller;
 
-import com.microservico.estoquepreco.constantes.RabbitmqConstantes;
-import com.microservico.estoquepreco.dto.EstoqueDto;
 import com.microservico.estoquepreco.service.RabbitmqService;
-import com.sun.jdi.Value;
+import constantes.RabbitmqConstantes;
+import dto.EstoqueDto;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -13,7 +11,6 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequestMapping(value = "estoque")
 public class EstoqueController {
-
     @Autowired
     private RabbitmqService rabbitmqService;
 
