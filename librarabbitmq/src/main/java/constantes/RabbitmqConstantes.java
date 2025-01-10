@@ -1,4 +1,4 @@
-package com.microservico.estoquepreco.constantes;
+package constantes;
 
 public class RabbitmqConstantes {
     public static final String FILA_ESTOQUE = "ESTOQUE";
